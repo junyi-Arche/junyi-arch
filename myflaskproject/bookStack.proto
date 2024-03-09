@@ -1,0 +1,38 @@
+syntax="proto3";
+
+package bookStack;
+
+message Bookdata {
+    string id=1;
+    string author=2;
+    string bookname=3;
+    string bookdescri=4;
+    string bookimgurl=5;
+}
+
+message CategoryMapEntry {
+    uint32 key = 1;
+    CategoryList category_items = 2;
+    message CategoryList {
+        repeated CategoryListItem category_list = 1;
+        message CategoryListItem {
+            string catekey = 1;
+            repeated string values = 2;
+        }
+    }
+}
+
+message Categories {
+    repeated CategoryMapEntry category_map = 1;
+}
+
+
+message MyData {
+    repeated Bookdata bookdata = 1;
+    oneof CategoryData {
+        Categories category = 2;
+    };
+    oneof PageData {
+        int32 mpage = 3;
+    }
+}

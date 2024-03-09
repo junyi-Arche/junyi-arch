@@ -1,0 +1,33 @@
+POST http://localhost:5000/CaptchaGet
+Content-Type: application/x-www-form-urlencoded
+
+
+
+###
+
+
+###
+POST http://localhost:5000/logout
+Content-Type: application/x-www-form-urlencoded
+
+usernum=123456
+
+###
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+usernum=123456&pwd=e93808d61ff19543d62b817cce9b87843d0d6b6ca62ee60c0daaf3cc9726719f
+
+###
+POST http://localhost:5000/getuserbook
+Content-Type: application/x-www-form-urlencoded
+
+user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzNDU2Iiwib3ZlcmR1ZV90aW1lIjoxNjk1MzYzODE2fQ.CpqFZQQ3GxIGMINpToxZwxqDW7sgf7sMakmAH5hQFso
+
+###
+POST http://localhost:5000/addtoshelf
+Content-Type: application/x-www-form-urlencoded
+
+utoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzNDU2Iiwib3ZlcmR1ZV90aW1lIjoxNjkzODgxNzM0fQ.SGOexYVy9BKy8q5mJZXQq743BwS_HahRXgJiqp1pgak&content=new-element&b_id=aagagagag
+
+

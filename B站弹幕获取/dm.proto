@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package dm;
+
+message DmSegMobileReply {
+   repeated DanmakuElem elems = 1;
+}
+
+message DanmakuElem {
+    uint32 color=1;
+    int64 stime=2;
+    string dmid=3;
+    int32 mode=4;
+    int32 size=5;
+    string uhash=6;
+    string text=7;
+    int32 date=8;
+    int32 weight=9;
+}
